@@ -1,0 +1,163 @@
+/* Webfont: Aamiya-Regular */
+@font-face {
+  font-family: "Aamiya";
+  src: url("./fonts/Aamiya-Regular.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Aamiya-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("./fonts/Aamiya-Regular.woff") format("woff"), /* Modern Browsers */
+       url("./fonts/Aamiya-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+       url("./fonts/Aamiya-Regular.svg#Aamiya-Regular") format("svg"); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Garute-Regular */
+@font-face {
+  font-family: "Garute";
+  src: url("./fonts/Garute-Regular.woff") format("woff"), /* Modern Browsers */
+       url("./fonts/Garute-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+*{
+  margin: 0;
+  padding: 0px;
+}
+
+body{
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Garute, sans-serif;
+}
+@media screen and (min-width: 984px) {
+  body {
+    margin: 0 3%
+  }  
+}
+
+header{
+  text-align: center;
+  background-color: #323331;
+  color: #E9E6DA;
+  padding: 1rem;
+}
+h1 {
+  font-size: 3.5em;
+}
+
+
+.quote{
+  font-size: 1.5em;
+  font-family: Aamiya, sans-serif;
+}
+/*--------cards-----------*/
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  background-color: #E9E6DA;
+  
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin: 2% 2%;
+  max-width: 650px;
+  background-color: #c6b99c;
+  cursor: pointer;
+  
+}
+.card_top {
+  
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1em;
+  justify-content: center;
+  
+}
+    /*-------left side-------*/
+    .card_left{
+      display: flex;
+      flex: 0 1 auto;
+      width: 284px;
+      flex-direction: column;
+    }
+    
+    .cover{
+      margin: 8%;
+      flex: 1;
+    }
+    .cover img{
+      box-shadow: 0.3em 0.2em 0.1em darkred;  
+    }
+
+    .info_details{
+  margin: 5% 2%;
+  font-size: 1em;
+  
+}
+.info_row{
+  display: flex;
+  margin: 0.4rem 8%;
+  
+}
+.info_title{
+  font-weight: bold;
+  padding-right: 0.5rem;
+}
+
+
+
+/*-------right side-------*/
+.card_right{
+  display: block;
+  flex: 1 1 auto;
+}
+
+.band_name{
+  margin: 6% 4% 2% 0.4%;
+  font-size: large;
+}
+
+@counter-style music{
+ system: cyclic;
+ symbols: "♪";
+ suffix: "  ";
+}
+
+ul{
+  list-style-type: music;
+  margin: 0 1.5rem;
+} 
+
+li {
+  margin: 0.4rem 0;
+}
+.members{
+  margin: 5%;
+  text-align: left;
+  font-size: medium;
+  overflow-y: auto;
+}
+
+/*-------bottom-------*/
+.card_bottom{
+  display: flex;
+  max-height: 5.5rem;
+}
+
+button{
+  
+  background-color: #AC1A00;
+  color: #EFEFEF;
+  max-width: 100%;
+  flex: 0 1 auto;
+  margin: 1rem auto;
+  border: 0;
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
